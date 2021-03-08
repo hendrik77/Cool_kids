@@ -23,7 +23,7 @@ CLASS lcl_fizz_buzz IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD get_next.
-    rv_output = COND #( WHEN iv_number MOD 3 = 0 AND iv_number MOD 5 = 0 THEN |FizzBuzz|
+    rv_output = COND #( WHEN iv_number MD 3 = 0 AND iv_number MOD 5 = 0 THEN |FizzBuzz|
                         WHEN iv_number MOD 3 = 0 THEN |Fizz|
                         WHEN iv_number MOD 5 = 0 THEN |Buzz|
                         ELSE iv_number ).
