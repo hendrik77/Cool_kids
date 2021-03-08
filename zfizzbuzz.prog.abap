@@ -17,7 +17,7 @@ ENDCLASS.
 
 CLASS lcl_fizz_buzz IMPLEMENTATION.
   METHOD fizz_buzz.
-    DO count TIMES.
+    DO iv_count TIMES.
       rv_text = rv_text && get_next( sy-index ) && |\n|.
     ENDDO.
   ENDMETHOD.
