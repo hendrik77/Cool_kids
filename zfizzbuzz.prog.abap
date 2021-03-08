@@ -5,7 +5,7 @@ CLASS lcl_fizz_buzz DEFINITION.
   PUBLIC SECTION.
     METHODS fizz_buzz
       IMPORTING
-        VALUE(count) TYPE i
+        VALUE(iv_count) TYPE i
       RETURNING
         VALUE(rv_text)  TYPE string.
     METHODS get_next
