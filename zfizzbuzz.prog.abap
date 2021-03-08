@@ -29,3 +29,7 @@ CLASS lcl_fizz_buzz IMPLEMENTATION.
                         ELSE iv_number ).
   ENDMETHOD.
 ENDCLASS.
+
+START-OF-SELECTION.
+  DATA(fz) = NEW lcl_fizz_buzz( ).
+  WRITE fz->fizz_buzz( 100 ).
