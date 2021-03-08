@@ -4,11 +4,10 @@ on: [push]
 
 jobs:
   abaplint:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: abaplint
-      uses: abaplint/actions-abaplint@main
+      uses: abaplint/actions-abaplint@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          echo test, and deploy your project.
