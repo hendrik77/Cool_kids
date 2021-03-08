@@ -32,4 +32,5 @@ ENDCLASS.
 
 START-OF-SELECTION.
   DATA(fz) = NEW lcl_fizz_buzz( ).
+  WRITE |FizzBuzz\n|.
   WRITE fz->fizz_buzz( 50 ).
